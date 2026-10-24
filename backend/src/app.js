@@ -18,4 +18,19 @@ app.use(cookieParser())
 app.use("/api/auth",authRouter)
 app.use("/api/tasks", taskRouter)
 
+app.get("/",(req,res)=>{
+    try{
+        res.json({
+            msg:"all good"
+        })
+    }
+    catch(error){
+        console.log(error)
+        res.json({
+            msg:error.message,
+            error:error
+        })
+    }
+})
+
 module.exports=app

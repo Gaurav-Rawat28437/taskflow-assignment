@@ -6,7 +6,6 @@ const validator = require("validator")
 const bcrypt = require("bcrypt")
 const jwt = require("jsonwebtoken")
 const { userModel } = require("../models/user.model")
-const { isLoggedIn } = require("../middleware/isLoggedIn.middleware")
 
 
 router.post("/sign-up", async (req, res) => {
