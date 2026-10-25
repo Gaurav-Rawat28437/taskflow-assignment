@@ -171,7 +171,7 @@ function AllTasks() {
           </div>
 
           <Link
-            to="/"
+            to="/home"
             className="w-fit rounded-lg bg-indigo-600 px-5 py-3 font-medium text-white hover:bg-indigo-700"
           >
             + Create Task
